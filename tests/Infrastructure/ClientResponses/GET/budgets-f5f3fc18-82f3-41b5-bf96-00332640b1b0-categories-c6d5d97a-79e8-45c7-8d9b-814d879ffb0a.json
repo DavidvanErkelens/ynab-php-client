@@ -1,0 +1,25 @@
+{
+    "data": {
+        "category": {
+            "id": "c6d5d97a-79e8-45c7-8d9b-814d879ffb0a",
+            "category_group_id": "750388af-f9ea-48d8-85ed-8e7177064711",
+            "name": "Internet",
+            "hidden": false,
+            "original_category_group_id": null,
+            "note": null,
+            "budgeted": 0,
+            "activity": -15000,
+            "balance": 35000,
+            "goal_type": null,
+            "goal_creation_month": null,
+            "goal_target": 0,
+            "goal_target_month": null,
+            "goal_percentage_complete": null,
+            "goal_months_to_budget": null,
+            "goal_under_funded": null,
+            "goal_overall_funded": null,
+            "goal_overall_left": null,
+            "deleted": false
+        }
+    }
+}

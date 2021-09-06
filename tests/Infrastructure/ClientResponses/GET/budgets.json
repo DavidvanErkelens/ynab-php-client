@@ -1,0 +1,27 @@
+{
+    "data": {
+        "budgets": [
+            {
+                "id": "f5f3fc18-82f3-41b5-bf96-00332640b1b0",
+                "name": "Testing Budget",
+                "last_modified_on": "2021-10-02T12:33:35+00:00",
+                "first_month": "2021-09-01",
+                "last_month": "2021-10-01",
+                "date_format": {
+                    "format": "DD-MM-YYYY"
+                },
+                "currency_format": {
+                    "iso_code": "EUR",
+                    "example_format": "123.456,78",
+                    "decimal_digits": 2,
+                    "decimal_separator": ",",
+                    "symbol_first": true,
+                    "group_separator": ".",
+                    "currency_symbol": "\u20ac",
+                    "display_symbol": true
+                }
+            }
+        ],
+        "default_budget": null
+    }
+}

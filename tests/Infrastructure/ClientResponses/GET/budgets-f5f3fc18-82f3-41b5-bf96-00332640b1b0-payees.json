@@ -1,0 +1,43 @@
+{
+    "data": {
+        "payees": [
+            {
+                "id": "1d278ccc-1c22-4ef9-821f-a62ca8d7bb94",
+                "name": "Starting Balance",
+                "transfer_account_id": null,
+                "deleted": false
+            },
+            {
+                "id": "50643e3f-8636-4107-9211-6fd76bb108e3",
+                "name": "Manual Balance Adjustment",
+                "transfer_account_id": null,
+                "deleted": false
+            },
+            {
+                "id": "d6f58df5-081d-44aa-9f73-d27bdf8c74c1",
+                "name": "Reconciliation Balance Adjustment",
+                "transfer_account_id": null,
+                "deleted": false
+            },
+            {
+                "id": "92886a18-5516-463b-97de-e8472fe447d0",
+                "name": "Transfer : Main account",
+                "transfer_account_id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+                "deleted": false
+            },
+            {
+                "id": "ae723430-f8a1-4aad-be92-2eab4c3676ff",
+                "name": "YNAB",
+                "transfer_account_id": null,
+                "deleted": false
+            },
+            {
+                "id": "0331baab-9745-4158-9ecb-11a92e8be581",
+                "name": "Transfer : Savings account",
+                "transfer_account_id": "347debfc-85bf-4eed-8a2c-cd5ee3b635a7",
+                "deleted": false
+            }
+        ],
+        "server_knowledge": 78
+    }
+}

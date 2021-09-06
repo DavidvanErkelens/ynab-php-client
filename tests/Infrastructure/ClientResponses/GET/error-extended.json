@@ -1,0 +1,8 @@
+{
+  "error": {
+    "id": "error-id",
+    "name": "Error",
+    "detail": "Error detail",
+    "invalid": "extra properties are not supported"
+  }
+}

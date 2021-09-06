@@ -1,0 +1,28 @@
+{
+    "data": {
+        "transaction_ids": [
+            "b7aa8ba2-6a33-413b-9271-cc8c08c6bc03"
+        ],
+        "transaction": {
+            "id": "b7aa8ba2-6a33-413b-9271-cc8c08c6bc03",
+            "date": "2021-10-02",
+            "amount": -150000,
+            "memo": "Groceries",
+            "cleared": "cleared",
+            "approved": true,
+            "flag_color": null,
+            "account_id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+            "account_name": "Main account",
+            "payee_id": "2a1a7bdd-6302-4e3c-bc91-6dce335b708f",
+            "payee_name": "Supermarket",
+            "category_id": "30371b20-a0d8-489a-8e29-4995f30e819f",
+            "category_name": "Groceries",
+            "transfer_account_id": null,
+            "transfer_transaction_id": null,
+            "matched_transaction_id": null,
+            "import_id": null,
+            "deleted": false,
+            "subtransactions": []
+        }
+    }
+}

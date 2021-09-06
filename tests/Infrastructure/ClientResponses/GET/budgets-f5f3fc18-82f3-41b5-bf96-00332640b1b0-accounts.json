@@ -1,0 +1,37 @@
+{
+    "data": {
+        "accounts": [
+            {
+                "id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+                "name": "Main account",
+                "type": "checking",
+                "on_budget": true,
+                "closed": false,
+                "note": null,
+                "balance": 1485000,
+                "cleared_balance": 1485000,
+                "uncleared_balance": 0,
+                "transfer_payee_id": "92886a18-5516-463b-97de-e8472fe447d0",
+                "direct_import_linked": false,
+                "direct_import_in_error": false,
+                "deleted": false
+            },
+            {
+                "id": "347debfc-85bf-4eed-8a2c-cd5ee3b635a7",
+                "name": "Savings account",
+                "type": "savings",
+                "on_budget": true,
+                "closed": false,
+                "note": null,
+                "balance": 2000000,
+                "cleared_balance": 2000000,
+                "uncleared_balance": 0,
+                "transfer_payee_id": "0331baab-9745-4158-9ecb-11a92e8be581",
+                "direct_import_linked": false,
+                "direct_import_in_error": false,
+                "deleted": false
+            }
+        ],
+        "server_knowledge": 78
+    }
+}

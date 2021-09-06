@@ -1,0 +1,20 @@
+{
+    "data": {
+        "payee_locations": [
+            {
+                "id": "9cb2a821-d76b-40ac-825a-3ec78c4562d2",
+                "payee_id": "2a1a7bdd-6302-4e3c-bc91-6dce335b708f",
+                "latitude": "0.12345",
+                "longitude": "0.12345",
+                "deleted": false
+            },
+            {
+                "id": "b4e92d1b-3226-4947-9431-b86404bbbe4c",
+                "payee_id": "2a1a7bdd-6302-4e3c-bc91-6dce335b708f",
+                "latitude": "0.12345",
+                "longitude": "0.12345",
+                "deleted": false
+            }
+        ]
+    }
+}

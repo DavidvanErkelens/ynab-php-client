@@ -1,0 +1,26 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "symfony/serializer": "^5.3",
+        "symfony/property-access": "^5.3",
+        "doctrine/annotations": "^1.13",
+        "fig/http-message-util": "^1.1",
+        "symfony/cache": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "YNAB\\": "src/",
+            "YNAB\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.9",
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "3.*",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "phpspec/prophecy": "^1.14"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit tests"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "data": {
+        "scheduled_transactions": [
+            {
+                "id": "a01976bf-0db3-4ed5-bc30-7544cc5b4ea1",
+                "date_first": "2021-10-09",
+                "date_next": "2021-10-09",
+                "frequency": "never",
+                "amount": 0,
+                "memo": "Scheduled transaction",
+                "flag_color": null,
+                "account_id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+                "account_name": "Main account",
+                "payee_id": "2a1a7bdd-6302-4e3c-bc91-6dce335b708f",
+                "payee_name": "Supermarket",
+                "category_id": "30371b20-a0d8-489a-8e29-4995f30e819f",
+                "category_name": "Groceries",
+                "transfer_account_id": null,
+                "deleted": false,
+                "subtransactions": []
+            }
+        ],
+        "server_knowledge": 88
+    }
+}

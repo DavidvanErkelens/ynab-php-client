@@ -1,0 +1,51 @@
+{
+    "data": {
+        "transactions": [
+            {
+                "type": "transaction",
+                "parent_transaction_id": null,
+                "id": "69e89eab-0b79-417b-929c-b1fcafbd73b6",
+                "date": "2021-10-02",
+                "amount": -15000,
+                "memo": "Subscription fee",
+                "cleared": "cleared",
+                "approved": true,
+                "flag_color": null,
+                "account_id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+                "account_name": "Main account",
+                "payee_id": "ae723430-f8a1-4aad-be92-2eab4c3676ff",
+                "payee_name": "YNAB",
+                "category_id": "c6d5d97a-79e8-45c7-8d9b-814d879ffb0a",
+                "category_name": "Internet",
+                "transfer_account_id": null,
+                "transfer_transaction_id": null,
+                "matched_transaction_id": null,
+                "import_id": null,
+                "deleted": false
+            },
+            {
+                "type": "transaction",
+                "parent_transaction_id": null,
+                "id": "d5e85c9d-26ea-4cb2-98fc-861deb08dd40",
+                "date": "2021-10-02",
+                "amount": -100,
+                "memo": "Test transaction",
+                "cleared": "cleared",
+                "approved": true,
+                "flag_color": null,
+                "account_id": "164199d0-644e-4e4d-b1fd-5343d1f45240",
+                "account_name": "Main account",
+                "payee_id": "ae723430-f8a1-4aad-be92-2eab4c3676ff",
+                "payee_name": "YNAB",
+                "category_id": "c6d5d97a-79e8-45c7-8d9b-814d879ffb0a",
+                "category_name": "Internet",
+                "transfer_account_id": null,
+                "transfer_transaction_id": null,
+                "matched_transaction_id": null,
+                "import_id": null,
+                "deleted": false
+            }
+        ],
+        "server_knowledge": 86
+    }
+}

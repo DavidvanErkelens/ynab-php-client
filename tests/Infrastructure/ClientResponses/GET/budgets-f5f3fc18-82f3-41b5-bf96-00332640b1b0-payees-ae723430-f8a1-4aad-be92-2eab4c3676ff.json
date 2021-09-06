@@ -1,0 +1,10 @@
+{
+    "data": {
+        "payee": {
+            "id": "ae723430-f8a1-4aad-be92-2eab4c3676ff",
+            "name": "YNAB",
+            "transfer_account_id": null,
+            "deleted": false
+        }
+    }
+}
