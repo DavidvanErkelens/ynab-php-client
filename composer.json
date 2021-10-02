@@ -1,4 +1,6 @@
 {
+    "name": "davidvanerkelens/ynab-php-client",
+    "description": "A PHP client implementation for the You Need A Budget (YNAB) API.",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
         "symfony/serializer": "^5.3",
