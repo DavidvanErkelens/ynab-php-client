@@ -1,5 +1,8 @@
 # PHP client library for YNAB
 ![build status](https://github.com/DavidvanErkelens/ynab-php-client/actions/workflows/ci.yml/badge.svg)
+![version](https://img.shields.io/github/v/release/DavidvanErkelens/ynab-php-client?sort=semver)
+![release date](https://img.shields.io/github/release-date/DavidvanErkelens/ynab-php-client)
+![license](https://img.shields.io/github/license/DavidvanErkelens/ynab-php-client)
 
 This is a PHP client implementation for the _You Need A Budget_ (YNAB) API. 
 
