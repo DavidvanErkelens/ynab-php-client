@@ -9,7 +9,9 @@ numbers.
 
 ## Installation
 ### Using composer
-_Not yet available, will be added soon_
+```
+composer require davidvanerkelens/ynab-php-client
+```
 
 ### Manual installation
 Download the contents of this repository, and include the `vendor/autoloader.php` file.
