@@ -3,6 +3,10 @@
 
 This is a PHP client implementation for the _You Need A Budget_ (YNAB) API. 
 
+:warning: This library is still in active development. Not all code is covered by tests yet, and contracts are subject
+to change. Breaking changes will be released according to [semantic versioning](https://github.com/semver/semver) version
+numbers.
+
 ## Installation
 ### Using composer
 _Not yet available, will be added soon_
