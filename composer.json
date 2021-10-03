@@ -4,18 +4,24 @@
     "license": [
         "MIT"
     ],
+    "authors": [
+        {
+            "name": "David van Erkelens",
+            "email": "me@davidvanerkelens.nl"
+        }
+    ],
     "require": {
         "guzzlehttp/guzzle": "^7.0",
         "symfony/serializer": "^5.3",
         "symfony/property-access": "^5.3",
         "doctrine/annotations": "^1.13",
         "fig/http-message-util": "^1.1",
-        "symfony/cache": "^5.3"
+        "symfony/cache": "^5.3",
+        "phpdocumentor/reflection-docblock": "^5.2"
     },
     "autoload": {
         "psr-4": {
-            "YNAB\\": "src/",
-            "YNAB\\Tests\\": "tests/"
+            "YNAB\\": "src/"
         }
     },
     "require-dev": {
