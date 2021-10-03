@@ -12,4 +12,9 @@ interface AccountsResponseDataInterface
      * @return Account[]
      */
     public function getAccounts(): array;
+
+    /**
+     * @return int
+     */
+    public function getServerKnowledge(): int;
 }

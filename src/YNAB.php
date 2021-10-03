@@ -10,6 +10,8 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use Psr\Http\Message\RequestInterface;
 use Symfony\Component\Cache\Adapter\ArrayAdapter;
+use YNAB\Infrastructure\Converters\MilliunitsConverter;
+use YNAB\Infrastructure\Converters\MilliunitsConverterInterface;
 use YNAB\Infrastructure\Converters\TypeConverter;
 use YNAB\Infrastructure\Http\RequestBuilder;
 use YNAB\Infrastructure\Http\UrlBuilder;
@@ -54,5 +56,10 @@ class YNAB
             new TypeConverter(),
             $configuration
         );
+    }
+
+    public static function getMilliunitsConverter(): MilliunitsConverterInterface
+    {
+        return new MilliunitsConverter();
     }
 }

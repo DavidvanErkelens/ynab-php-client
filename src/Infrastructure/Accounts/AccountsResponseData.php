@@ -10,6 +10,7 @@ class AccountsResponseData implements AccountsResponseDataInterface
 {
     /** @var Account[] */
     private array $accounts;
+    private int $serverKnowledge;
 
     /**
      * @return Account[]
@@ -26,6 +27,24 @@ class AccountsResponseData implements AccountsResponseDataInterface
     public function setAccounts(array $accounts): AccountsResponseData
     {
         $this->accounts = $accounts;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getServerKnowledge(): int
+    {
+        return $this->serverKnowledge;
+    }
+
+    /**
+     * @param int $serverKnowledge
+     * @return AccountsResponseData
+     */
+    public function setServerKnowledge(int $serverKnowledge): AccountsResponseData
+    {
+        $this->serverKnowledge = $serverKnowledge;
         return $this;
     }
 }

@@ -9,4 +9,5 @@ use DateTime;
 interface DateTimeConverterInterface
 {
     public function parseIso8601(string $dateTime): DateTime;
+    public function toIso8601(DateTime $dateTime): string;
 }

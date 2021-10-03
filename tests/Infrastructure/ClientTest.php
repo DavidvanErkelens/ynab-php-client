@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @noinspection ALL
+ */
+
 declare(strict_types=1);
 
 namespace YNAB\Tests\Infrastructure;
@@ -8,6 +12,7 @@ use Fig\Http\Message\StatusCodeInterface;
 use GuzzleHttp\Client as HttpClient;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
+use Prophecy\PhpUnit\ProphecyTrait;
 use Prophecy\Prophecy\ObjectProphecy;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Http\Message\RequestInterface;
@@ -22,11 +27,13 @@ use YNAB\Infrastructure\Converters\TypeConverter;
 use YNAB\Infrastructure\Http\RequestBuilder;
 use YNAB\Infrastructure\Http\UrlBuilder;
 use YNAB\Infrastructure\User\UserResponse;
-use YNAB\Tests\MockTrait;
 
+/**
+ * @psalm-suppress MissingThrowsDocblock
+ */
 class ClientTest extends TestCase
 {
-    use MockTrait;
+    use ProphecyTrait;
 
     protected const RATE_LIMIT = 15;
 
@@ -40,7 +47,7 @@ class ClientTest extends TestCase
     private const SCHEDULED_TRANSACTION_ID = 'a01976bf-0db3-4ed5-bc30-7544cc5b4ea1';
     private const TRANSACTION_ID = 'b7aa8ba2-6a33-413b-9271-cc8c08c6bc03';
 
-    protected ObjectProphecy $httpClientMock;
+    protected ObjectProphecy $httpClient;
     protected ObjectProphecy $configuration;
     protected ObjectProphecy $cache;
 
@@ -48,15 +55,15 @@ class ClientTest extends TestCase
 
     public function setUp(): void
     {
-        $this->httpClientMock = $this->mock(HttpClient::class);
-        $this->configuration = $this->mock(ConfigurationInterface::class);
-        $this->cache = $this->mock(CacheItemPoolInterface::class);
+        $this->httpClient = $this->prophesize(HttpClient::class);
+        $this->configuration = $this->prophesize(ConfigurationInterface::class);
+        $this->cache = $this->prophesize(CacheItemPoolInterface::class);
 
         $self = $this;
 
-        $this->httpClientMock
+        $this->httpClient
             ->sendRequest(Argument::type('Psr\Http\Message\RequestInterface'))
-            ->will(function(array $args) use ($self) {
+            ->will(function (array $args) use ($self) {
                 /** @var RequestInterface */
                 $request = $args[0];
 
@@ -67,21 +74,26 @@ class ClientTest extends TestCase
                     str_replace(['/', '?', '='], '-', (string) $request->getUri()) . '.json'
                 ]);
 
-                $streamMock = $self->mock(StreamInterface::class);
+                $streamMock = $self->prophesize(StreamInterface::class);
                 $streamMock->getContents()->willReturn(file_get_contents($contentFile));
 
-                $responseMock = $self->mock(ResponseInterface::class);
+                $responseMock = $self->prophesize(ResponseInterface::class);
                 $responseMock->getStatusCode()->willReturn(StatusCodeInterface::STATUS_OK);
                 $responseMock->getBody()->willReturn($streamMock->reveal());
                 $responseMock->getHeaderLine('X-Rate-Limit')->willReturn(self::RATE_LIMIT . '/200');
                 return $responseMock->reveal();
             });
 
-        $this->configuration->isCachingDisabled()->willReturn(true);
-        $this->configuration->getCacheItemPool()->willReturn($this->cache->reveal());
+        $this->configuration
+            ->isCachingDisabled()
+            ->willReturn(true);
+
+        $this->configuration
+            ->getCacheItemPool()
+            ->willReturn($this->cache->reveal());
 
         $this->sut = new Client(
-            $this->httpClientMock->reveal(),
+            $this->httpClient->reveal(),
             new UrlBuilder(),
             new RequestBuilder(),
             new TypeConverter(),

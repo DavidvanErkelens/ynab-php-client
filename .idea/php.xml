@@ -102,6 +102,7 @@
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/juststeveking/parameterbag" />
       <path value="$PROJECT_DIR$/vendor/juststeveking/uri-builder" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy-phpunit" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

@@ -45,6 +45,14 @@ If a request to the API returns an unexpected status code, a [YnabErrorException
 will be thrown. In this exception, an instance of [ErrorResponseInterface](src/Infrastructure/Errors/ErrorResponseInterface.php)
 can be found, which contains the error reported by the YNAB API.
 
+## Milliunits
+All amounts reported by the YNAB API are in milliunits format. A converter for this format is available.
+```php
+$converter = YNAB::getMilliunitsConverter();
+$converter->toFloat(123930); // returns 123.93
+$converter->fromFloat(123.93); // returns 123930
+```
+
 ## Rate limiting
 YNAB's API is rate limited to 200 requests per access token per hour. The current usage is returned by the YNAB API in 
 a header, which you can fetch via the client object after a call to the API has been performed. 

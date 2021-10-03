@@ -14,4 +14,8 @@
             <directory name="tests" />
         </ignoreFiles>
     </projectFiles>
+
+    <plugins>
+        <pluginClass xmlns="https://getpsalm.org/schema/config" class="Psalm\PhpUnitPlugin\Plugin"/>
+    </plugins>
 </psalm>

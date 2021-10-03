@@ -20,7 +20,8 @@
         "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "3.*",
         "friendsofphp/php-cs-fixer": "^3.1",
-        "phpspec/prophecy": "^1.14"
+        "phpspec/prophecy": "^1.14",
+        "phpspec/prophecy-phpunit": "^2.0"
     },
     "scripts": {
         "test": "./vendor/bin/phpunit tests"
