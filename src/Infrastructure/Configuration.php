@@ -10,7 +10,7 @@ use YNAB\ConfigurationInterface;
 class Configuration implements ConfigurationInterface
 {
     private string $apiToken;
-    private bool $cachingDisabled;
+    private bool $cachingDisabled = false;
     private CacheItemPoolInterface $cacheItemPool;
     private ?DateInterval $cacheTimeout;
 
