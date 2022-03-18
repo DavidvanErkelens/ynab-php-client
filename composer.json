@@ -12,8 +12,8 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "symfony/serializer": "^5.3",
-        "symfony/property-access": "^5.3",
+        "symfony/serializer": "^5.4",
+        "symfony/property-access": "^5.4",
         "doctrine/annotations": "^1.13",
         "fig/http-message-util": "^1.1",
         "symfony/cache": "^5.3",
